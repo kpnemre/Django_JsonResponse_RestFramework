@@ -36,7 +36,7 @@ class StudentCreate(ListCreateAPIView):
 class StudentGetUpdateDelete(RetrieveUpdateDestroyAPIView):
     queryset= Student.objects.all()
     serializer_class =StudentSerializer
-    # lookup_field='id'
+    lookup_field='id'
 # ----------------------------------------------------------------------
 # 3. restframework
 # functional based
